@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Laboratorio_04</string>
+    <string name="contabilidad_de_ingresos_egresos">Contabilidad de Ingresos/ Egresos</string>
+    <string name="saldo_actual_ahorro">Saldo Actual Ahorro</string>
+    <string name="saldo_actual_credito">Saldo Actual Credito</string>
+    <string name="saldo_actual_efectivo">Saldo Actual Efectivo</string>
+    <string name="registrar_ingresos_egresos">Registrar Ingresos/ Egresos</string>
+    <string name="ingreso">Ingreso</string>
+    <string name="egreso">Egreso</string>
+    <string name="tipo_de_cuenta">Tipo de cuenta</string>
+    <string name="ahorro">Ahorro</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="tarjeta_de_credito">Tarjeta de credito</string>
+    <string name="registrar">Registrar</string>
+    <string name="proporsion_ingresos_egresos">Proporsion ingresos /egresos</string>
+    <string name="monto">Monto</string>
+    <string name="_2000">2000</string>
+    <string name="_120">120</string>
+    <string name="_1200">1200</string>
+
+
+    <string-array name="tipo_cuenta_arrays">
+        <item>Tarjeta de credito</item>
+        <item>Ahorro</item>
+        <item>Efectivo</item>
+            </string-array>
+
+</resources>

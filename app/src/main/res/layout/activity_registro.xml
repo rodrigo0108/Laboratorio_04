@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rramos.laboratorio_04.RegistroActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/registrar_ingresos_egresos"
+        android:textSize="18sp"
+        android:padding="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/get_monto"
+        android:hint="@string/monto"
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/grupo_ie">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingreso"
+                android:id="@+id/radio_ingreso"
+                android:layout_weight="1"
+                android:layout_marginStart="48dp"
+                android:checked="true"
+
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/egreso"
+                android:id="@+id/radio_egreso"
+                android:layout_weight="1"
+/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo_de_cuenta"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:id="@+id/tipo_cuenta_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:entries="@array/tipo_cuenta_arrays"
+        android:layout_marginBottom="150dp"></Spinner>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registrar"
+        android:onClick="registrarOperacion"/>
+</LinearLayout>
